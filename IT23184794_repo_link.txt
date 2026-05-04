@@ -1,1 +1,1 @@
-https://github.com/KavishkaMalmi/ITPM-Assignment-01-IT23184794/tree/main/singlish-playwright
+https://github.com/KavishkaMalmi/IT23184794-pixelssuite-functional-testing
