@@ -1,35 +1,178 @@
-# Playwright Test Automation Project - IT23184794
+# IT23184794 - Pixelssuite Functional & Usability Testing
 
-This project contains automated end-to-end tests for image preview functionality using Playwright, specifically for the Pixelssuite image converter.
+## 📌 Assignment Details
 
-## Prerequisites
+* **Module:** IT3040 – IT Project Management (ITPM)
+* **Assignment:** Assignment 1 – Option 2
+* **Student ID:** IT23184794
+* **Objective:**
+  This project evaluates the **functional correctness and usability** of the Pixelssuite website by testing its key features under both valid and invalid conditions.
 
-- Python 3.8 or higher
-- Google Chrome (recommended) or Playwright Chromium
+---
 
-## Installation
+## 🌐 Website Under Test
 
-1. Install the required Python packages:
-   ```bash
-   pip install playwright openpyxl
-   ```
+🔗 [https://www.pixelssuite.com/](https://www.pixelssuite.com/)
 
-2. Install Playwright browsers:
-   ```bash
-   python -m playwright install
-   ```
+---
 
-## Running the Tests
+## 🎯 Features Tested
 
-To run the image preview tests and generate results:
+The following features of the application were tested:
 
-```bash
-python IT23184794_image_preview_test.py --url "https://www.pixelssuite.com/convert-to-png" --png IT23184794_sample.png --csv IT23184794_execution_results.csv
+1. Document Conversion
+2. PDF Editing
+3. Image Resizing
+4. Cropping
+5. Compression
+6. Image Format Conversion
+7. Meme Generation
+8. Color Picker
+9. Image Rotation
+10. Image Flipping
+
+---
+
+## 🧪 Test Case Design
+
+* A total of **36 test cases** were created
+* Each feature includes:
+
+  * ✅ 1 Positive test case
+  * ❌ 2 Negative test cases
+
+### ✔ Test Coverage Includes:
+
+* Valid inputs
+* Invalid file types
+* Missing inputs
+* Edge cases
+* User interaction behavior
+
+---
+
+## 🤖 Test Automation
+
+### 🔹 Automated Scenario
+
+One test case was automated using **Playwright** to verify:
+
+✔ Image upload
+✔ Preview functionality
+✔ System response validation
+
+---
+
+## ⚙️ Technologies Used
+
+* **Python 3**
+* **Playwright**
+* **OpenPyXL**
+* **CSV for result recording**
+
+---
+
+## 📁 Project Structure
+
+```
+IT23184794/
+│
+├── IT23184794_image_preview_test.py        # Automation script
+├── IT23184794_execution_results.csv        # Test execution results
+├── IT23184794_sample.png                   # Sample input image
+├── IT23184794_Manual Test Cases for Option 2.xlsx # Manual test cases
+├── results/
+│   └── preview_pass.png                    # Screenshot of successful test
 ```
 
-The execution results will be saved to `IT23184794_execution_results.csv` and screenshots will be stored in the `results` directory.
+---
 
-## Repository Link
+## 🚀 How to Run the Automation
 
-The full project repository can be found at:
+### 🔹 Step 1: Install Requirements
+
+```bash
+python -m pip install playwright openpyxl
+python -m playwright install
+```
+
+---
+
+### 🔹 Step 2: Navigate to Project Folder
+
+```bash
+cd /d D:\test_automation_ui\test_automation_ui\IT23184794
+```
+
+---
+
+### 🔹 Step 3: Run the Test
+
+```bash
+python IT23184794_image_preview_test.py --url "https://www.pixelssuite.com/convert-to-png" --slow-mo-ms 2000 --png IT23184794_sample.png --csv IT23184794_execution_results.csv
+```
+
+---
+
+## 📊 Execution Results
+
+* **Preview Detected:** TRUE
+* **Status:** PASS
+* **Output File:** IT23184794_execution_results.csv
+* **Screenshot:** results/preview_pass.png
+
+---
+
+## 📷 Evidence
+
+The automation script captures a screenshot when the preview is successfully displayed.
+
+✔ Screenshot file:
+`results/preview_pass.png`
+
+---
+
+## 📌 Assumptions
+
+* The system should display a preview after uploading a valid PNG image
+* Supported formats include PNG, JPG, and WEBP
+* The preview section must accurately reflect the uploaded image
+
+---
+
+## ⚠️ Limitations
+
+* Backend API testing is not included
+* Performance and security testing are out of scope
+* Automation focuses only on preview functionality
+
+---
+
+## ✅ Conclusion
+
+The testing process confirmed that:
+
+* Core features of the Pixelssuite application function correctly
+* The preview functionality operates as expected
+* Minor usability improvements can be considered for better user feedback
+
+---
+
+## 🔗 Repository Link
+
 [https://github.com/KavishkaMalmi/IT23184794-pixelssuite-functional-testing](https://github.com/KavishkaMalmi/IT23184794-pixelssuite-functional-testing)
+
+---
+
+## 📦 Submission Includes
+
+* ✔ Manual Test Cases (Excel File)
+* ✔ Automation Script (Playwright Project)
+* ✔ IT23184794_execution_results.csv
+* ✔ GitHub Repository
+
+---
+
+## 👨‍💻 Author
+
+**IT23184794**
