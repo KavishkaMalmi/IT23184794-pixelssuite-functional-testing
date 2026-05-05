@@ -80,7 +80,6 @@ IT23184794/
 ├── IT23184794_image_preview_test.py        # Automation script
 ├── IT23184794_execution_results.csv        # Test execution results
 ├── IT23184794_sample.png                   # Sample input image
-├── IT23184794_Manual Test Cases for Option 2.xlsx # Manual test cases
 ├── results/
 │   └── preview_pass.png                    # Screenshot of successful test
 ```
